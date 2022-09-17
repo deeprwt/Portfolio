@@ -1,0 +1,68 @@
+import { Button } from "@mui/material";
+import React from "react";
+// import Main_Slider from "../slider/Main_Slider";
+import TypeWriterEffect from "react-typewriter-effect";
+import hero from "../../assets/images/hero.png";
+import back from "../../assets/images/background.png";
+import Story from "../parts/Story";
+
+export const Home = () => {
+  return (
+    <>
+      <div
+        className="w-full bg-no-repeat bg-cover bg-fixed"
+        style={{ backgroundImage: `url(${back})` }}
+      >
+        <div className="w-[90%] m-auto flex flex-col sm:flex-row h-[100vh] ">
+          <div className="flex w-full sm:w-8/12 flex-col justify-center">
+            <h1 className="flex  items-center font-bold font-serif">
+              <span className="text-[#002057] text-4xl sm:text-6xl">
+                Hi, <br />
+                I'm<span className="text-[#ff7b00]"> Deepak Rawat</span>
+                <br />
+                Web Developer
+              </span>
+            </h1>
+            <p className="py-5 capitalize flex font-semibold text-base sm:text-xl md:text-2xl">
+              I Am Into &nbsp;
+              <span>
+                <TypeWriterEffect
+                  textStyle={{
+                    fontFamily: "Red Hat Display",
+                    color: "#940808",
+                    fontWeight: 400,
+                    fontSize: "1em",
+                  }}
+                  startDelay={2000}
+                  cursorColor="#3F3D56"
+                  multiText={[
+                    "Hey there,",
+                    "it consist of two types...",
+                    "Single text display and multi text display",
+                    "Fonts can be customized.",
+                    "The type speed can be customized as well",
+                  ]}
+                  loop={true}
+                  nextTextDelay={1000}
+                  typeSpeed={30}
+                />
+              </span>
+            </p>
+            <Button
+              variant="contained"
+              className=" h-[40px] w-56 shadow-slate-600 shadow-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300"
+            >
+              Contact Me
+            </Button>
+          </div>
+          <div className="flex w-full sm:w-4/12 flex-col justify-center items-center">
+            <div className="flex">
+              <img src={hero} className="rounded-full w-60" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Story />
+    </>
+  );
+};

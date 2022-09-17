@@ -1,3 +1,9 @@
+*{padding: 0px;margin: 0px;}
+.active{
+  color: #011aff;
+  border-bottom: 2px solid #011aff;
+  font-style: none;
+}
 .App {
   text-align: center;
 }
@@ -27,6 +33,12 @@
 .App-link {
   color: #61dafb;
 }
+
+.awssld__bullets {
+  bottom: 1rem!important;
+  z-index: 50!important;
+}
+
 
 @keyframes App-logo-spin {
   from {
