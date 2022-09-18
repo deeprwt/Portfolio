@@ -1,7 +1,9 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 
-import hero from "../../assets/images/hero.png";
+import html from "../../assets/images/html.jpg";
+import css from "../../assets/images/css.jpg";
+import js from "../../assets/images/js.jpg";
 
 const ServiceCardsData = () => {
   return (
@@ -10,56 +12,45 @@ const ServiceCardsData = () => {
         <div>
           {/* Card stats */}
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
-                title="React"
+                title="HTML"
                 subheader="September 14, 2016"
-                img={hero}
+                img={html}
                 paragrap1="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
                 pHead="Method:"
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
-                title="React"
+                title="CSS"
                 subheader="September 14, 2016"
-                img={hero}
+                img={css}
                 paragrap1="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
                 pHead="Method:"
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
-                title="React"
+                title="JAVASCRIPT"
                 subheader="September 14, 2016"
-                img={hero}
+                img={js}
                 paragrap1="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
                 pHead="Method:"
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
                 title="React"
                 subheader="September 14, 2016"
-                img={hero}
-                paragrap1="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
-                pHead="Method:"
-                paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
-              />
-            </div>
-            <div className="w-full lg:w-6/12 xl:w-3/12 px-4 mb-6">
-              <ServiceCard
-                subWord="D"
-                title="React"
-                subheader="September 14, 2016"
-                img={hero}
+                img={html}
                 paragrap1="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
                 pHead="Method:"
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "

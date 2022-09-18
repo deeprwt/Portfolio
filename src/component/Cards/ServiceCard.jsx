@@ -9,10 +9,13 @@ import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { blue } from "@mui/material/colors";
+import { blue, red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+import CodeIcon from "@mui/icons-material/Code";
+import { Button } from "@mui/material";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -33,14 +36,21 @@ export default function ServiceCard(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: blue[500] }} aria-label="recipe">
-            {props.subWord}
+            {/* {props.subWord} */}
+            <CodeIcon />
           </Avatar>
         }
         title={props.title}
+        titleTypographyProps={{
+          fontSize: 30,
+          color: blue[600],
+          fontFamily: ['"Montserrat"', "Open Sans"],
+          fontWeight: 700,
+        }}
         subheader={props.subheader}
       />
       <CardMedia
@@ -49,18 +59,16 @@ export default function ServiceCard(props) {
         image={props.img}
         alt="Paella dish"
       />
+      {/* <video autoPlay loop muted poster={props.img}>
+        <source src={props.videos} type="video/mp4" />
+      </video> */}
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {props.paragrap1}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
+        <Button>Read </Button>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

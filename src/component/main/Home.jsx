@@ -7,6 +7,7 @@ import back from "../../assets/images/background.png";
 import Story from "../parts/Story";
 import TypeWriter from "../slider/TypeWriter";
 import Services from "../parts/Services";
+import Timer from "../parts/Timer";
 
 export const Home = () => {
   return (
@@ -15,7 +16,7 @@ export const Home = () => {
         className="w-full bg-no-repeat bg-cover bg-fixed"
         style={{ backgroundImage: `url(${back})` }}
       >
-        <div className="w-[90%] m-auto flex flex-col sm:flex-row h-[100vh] ">
+        <div className="w-[90%] m-auto flex flex-col sm:flex-row h-[100vh] justify-around">
           <div className="flex w-full sm:w-8/12 flex-col justify-center">
             <h1 className="flex  items-center font-bold font-serif">
               <span className="text-[#002057] text-4xl sm:text-6xl">
@@ -45,8 +46,13 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <Story />
-      <Services />
+      <div className="w-full m-auto flex flex-col sm:flex-row mt-40">
+        <Story />
+      </div>
+      <div className="w-full mt-40 text-center ">
+        <Services />
+      </div>
+      <Timer />
     </>
   );
 };
