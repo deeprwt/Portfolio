@@ -1,10 +1,12 @@
 import { Button } from "@mui/material";
 import React from "react";
 // import Main_Slider from "../slider/Main_Slider";
-import TypeWriterEffect from "react-typewriter-effect";
+
 import hero from "../../assets/images/hero.png";
 import back from "../../assets/images/background.png";
 import Story from "../parts/Story";
+import TypeWriter from "../slider/TypeWriter";
+import Services from "../parts/Services";
 
 export const Home = () => {
   return (
@@ -26,26 +28,7 @@ export const Home = () => {
             <p className="py-5 capitalize flex font-semibold text-base sm:text-xl md:text-2xl">
               I Am Into &nbsp;
               <span>
-                <TypeWriterEffect
-                  textStyle={{
-                    fontFamily: "Red Hat Display",
-                    color: "#940808",
-                    fontWeight: 400,
-                    fontSize: "1em",
-                  }}
-                  startDelay={2000}
-                  cursorColor="#3F3D56"
-                  multiText={[
-                    "Hey there,",
-                    "it consist of two types...",
-                    "Single text display and multi text display",
-                    "Fonts can be customized.",
-                    "The type speed can be customized as well",
-                  ]}
-                  loop={true}
-                  nextTextDelay={1000}
-                  typeSpeed={30}
-                />
+                <TypeWriter />
               </span>
             </p>
             <Button
@@ -63,6 +46,7 @@ export const Home = () => {
         </div>
       </div>
       <Story />
+      <Services />
     </>
   );
 };

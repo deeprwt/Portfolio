@@ -170,13 +170,15 @@ const Story = () => {
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                  <h1 className="text-4xl p-4 font-bold">Skills</h1>
+                  <h1 className="text-4xl p-4 font-bold">Experience</h1>
                   <p className="text-lg p-4">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                    I create successful responsive websites that are fast, easy
+                    to use, and built with best practices. The main area of my
+                    expertise is front-end development, HTML, CSS, JS, building
+                    small and medium web apps, custom plugins, features,
+                    animations, and coding interactive layouts.
                   </p>
+                  <h1 className="text-2xl p-4 font-bold">Front-end</h1>
                 </div>
               </div>
             </div>
