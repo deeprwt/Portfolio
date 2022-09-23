@@ -12,7 +12,7 @@ const ServiceCardsData = () => {
         <div>
           {/* Card stats */}
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-3/12 md:w-3/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
                 title="HTML"
@@ -23,7 +23,7 @@ const ServiceCardsData = () => {
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-3/12 md:w-3/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
                 title="CSS"
@@ -34,7 +34,7 @@ const ServiceCardsData = () => {
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-3/12 md:w-3/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
                 title="JAVASCRIPT"
@@ -45,7 +45,7 @@ const ServiceCardsData = () => {
                 paragrap2=" This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like. "
               />
             </div>
-            <div className="w-full lg:w-6/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
+            <div className="w-full lg:w-3/12 md:w-3/12 sm:w-6/12 xl:w-3/12 px-4 mb-6">
               <ServiceCard
                 subWord="D"
                 title="React"
