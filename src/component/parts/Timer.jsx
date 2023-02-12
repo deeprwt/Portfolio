@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 const Timer = () => {
   return (
     <>
-      <div className=""></div>
+      <div className="flex h-80 justify-center items-center">hello world</div>
     </>
   );
 };

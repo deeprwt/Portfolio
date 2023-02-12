@@ -7,8 +7,8 @@ const TypeWriter = () => {
       <TypeWriterEffect
         textStyle={{
           fontFamily: "Red Hat Display",
-          color: "#940808",
-          fontWeight: 400,
+          // color: "#940808",
+          fontWeight: 600,
           fontSize: "1em",
         }}
         startDelay={2000}

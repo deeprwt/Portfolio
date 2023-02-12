@@ -15,8 +15,7 @@ const Main_Slider = () => {
         cancelOnInteraction={false}
         interval={3000}
         play={true}
-        className=" h-[80vh] max-w-full"
-      >
+        className=" h-[90vh] max-w-full">
         <div data-src={first} />
         <div data-src={second} />
         <div data-src={first} />

@@ -6,7 +6,7 @@ const Story = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
-      <div className="flex w-full sm:w-1/2 flex-col justify-center items-center">
+      {/* <div className="flex w-full sm:w-1/2 flex-col justify-center items-center">
         <div className="flex">
           <img
             src={Deepak}
@@ -14,13 +14,12 @@ const Story = () => {
             alt=""
           />
         </div>
-      </div>
-      <div className="flex w-full sm:w-1/2 flex-col justify-center">
-        <div className="w-full p-5 items-center">
+      </div> */}
+      <div className="flex w-full flex-col justify-center">
+        <div className="w-full sm:w-[60%] items-center">
           <ul
             className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
-            role="tablist"
-          >
+            role="tablist">
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
@@ -35,9 +34,8 @@ const Story = () => {
                 }}
                 data-toggle="tab"
                 href="#link1"
-                role="tablist"
-              >
-                <i className="fas fa-space-shuttle text-base mr-1"></i> Profile
+                role="tablist">
+                <i className="fas fa-space-shuttle text-base mr-1"></i> Story
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -54,9 +52,8 @@ const Story = () => {
                 }}
                 data-toggle="tab"
                 href="#link2"
-                role="tablist"
-              >
-                <i className="fas fa-cog text-base mr-1"></i> Settings
+                role="tablist">
+                <i className="fas fa-cog text-base mr-1"></i> Skills
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -73,13 +70,14 @@ const Story = () => {
                 }}
                 data-toggle="tab"
                 href="#link3"
-                role="tablist"
-              >
-                <i className="fas fa-briefcase text-base mr-1"></i> Options
+                role="tablist">
+                <i className="fas fa-briefcase text-base mr-1"></i> Experience
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">
+        </div>
+        <div className="w-full p-5 items-center">
+          <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 rounded">
             <div className="px-4 py-5 flex-auto">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                 <h1 className="text-4xl p-4 font-bold">My Story</h1>
@@ -102,7 +100,7 @@ const Story = () => {
                 <div className="w-full m-3">
                   <div className="flex justify-between">
                     <span className="uppercase font-bold font-sans ">
-                      Html 5
+                      HTML 5
                     </span>
                     <span className="text-center text-[#0779e4]">100%</span>
                   </div>
@@ -112,8 +110,23 @@ const Story = () => {
                       role="progressbar"
                       aria-valuenow="100"
                       aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div className="w-full m-3">
+                  <div className="flex justify-between">
+                    <span className="uppercase font-bold font-sans ">
+                      CSS 3
+                    </span>
+                    <span className="text-center text-[#0779e4]">100%</span>
+                  </div>
+                  <div className="h-auto rounded-lg border-2 w-full bg-slate-200">
+                    <div
+                      className="w-full bg-gradient-to-r  from-red-400 via-blue-400 to-blue-900  rounded-lg h-5"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div className="w-full m-3">
@@ -125,15 +138,14 @@ const Story = () => {
                   </div>
                   <div className="h-auto rounded-lg border-2 w-full bg-slate-200">
                     <div
-                      className="w-[90%] bg-gradient-to-r from-blue-400 to-blue-800  rounded-lg h-5"
+                      className="w-[90%] bg-gradient-to-r  from-red-400 via-blue-400 to-blue-900 rounded-lg h-5"
                       role="progressbar"
                       aria-valuenow="90"
                       aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                      aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div className="w-full m-3">
+                {/* <div className="w-full m-3">
                   <div className="flex justify-between">
                     <span className="uppercase font-bold font-sans ">
                       JAVASCRIPT
@@ -142,31 +154,14 @@ const Story = () => {
                   </div>
                   <div className="h-auto rounded-lg border-2 w-full bg-slate-200">
                     <div
-                      className="w-[90%] bg-gradient-to-r from-blue-400 to-blue-800  rounded-lg h-5"
+                      className="w-[90%] bg-gradient-to-r  from-red-400 via-blue-400 to-blue-900  rounded-lg h-5"
                       role="progressbar"
                       aria-valuenow="90"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
                   </div>
-                </div>
-                <div className="w-full m-3">
-                  <div className="flex justify-between">
-                    <span className="uppercase font-bold font-sans ">
-                      JAVASCRIPT
-                    </span>
-                    <span className="text-center text-[#0779e4]">90%</span>
-                  </div>
-                  <div className="h-auto rounded-lg border-2 w-full bg-slate-200">
-                    <div
-                      className="w-[90%] bg-gradient-to-r from-blue-400 to-blue-800  rounded-lg h-5"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
+                </div> */}
               </div>
               <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                 <h1 className="text-4xl p-4 font-bold">Experience</h1>

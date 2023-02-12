@@ -10,7 +10,7 @@ const AnimationVideo = () => {
     <>
       <div className="w-full flex justify-center items-center">
         <div className="w-1/3">
-          <video autoPlay loop muted poster={hero}>
+          <video autoPlay loop muted>
             <source src={html} type="video/mp4" />
           </video>
           <h1 className="text-center font-[cursive] text-lg text-blue-400 ">
@@ -18,7 +18,7 @@ const AnimationVideo = () => {
           </h1>
         </div>
         <div className="w-1/3">
-          <video autoPlay loop muted poster={hero}>
+          <video autoPlay loop muted>
             <source src={css} type="video/mp4" />
           </video>
           <h1 className="text-center font-[cursive] text-lg text-blue-400 ">

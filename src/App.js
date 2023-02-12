@@ -5,22 +5,25 @@ import "./App.css";
 import Nav from "./component/header/Nav";
 import { About } from "./component/main/About";
 import { Contact } from "./component/main/Contact";
-import { Gallery } from "./component/main/Gallery";
+import { Skills } from "./component/main/Skills";
 import { Home } from "./component/main/Home";
 import Footer from "./component/footer/Footer";
+import background2 from "./assets/images/background2.png";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Nav />
-        <div className="main absolute mt-16 w-full">
+        <div
+          className="main absolute mt-16 w-full"
+          style={{ backgroundImage: `url(${background2})` }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="*" element={<Home />} />
           </Routes>
           {/* <Footer/> */}
         </div>
